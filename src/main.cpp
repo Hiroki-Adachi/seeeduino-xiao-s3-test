@@ -3,13 +3,22 @@
 void setup() {
   Serial.begin(115200);
   pinMode(LED_BUILTIN, OUTPUT);
+
+  delay(20000);
+
+  Serial.println("++++++++++ OUTPUT TEST .CSV ++++++++++");
+  Serial.println("content1, content2, content3");
 }
 
 void loop() {
-  Serial.println("Hello, World...");
-  delay(100);
+  Serial.print("star");
+  Serial.print(", ");
+  Serial.print("test");
+  Serial.print(", ");
+  Serial.println("end");
+  
   digitalWrite(LED_BUILTIN, HIGH);
-  delay(100);
+  delay(500);
   digitalWrite(LED_BUILTIN, LOW);
-  delay(100);
+  delay(500);
 }
