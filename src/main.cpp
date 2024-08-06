@@ -4,18 +4,18 @@ void setup() {
   Serial.begin(115200);
   pinMode(LED_BUILTIN, OUTPUT);
 
-  delay(20000);
+  // delay(20000);
 
-  Serial.println("++++++++++ OUTPUT TEST .CSV ++++++++++");
-  Serial.println("content1, content2, content3");
+  // Serial.println("++++++++++ OUTPUT TEST .CSV ++++++++++");
+  // Serial.println("content1, content2, content3");
 }
 
 void loop() {
-  Serial.print("star");
-  Serial.print(", ");
-  Serial.print("test");
-  Serial.print(", ");
-  Serial.println("end");
+  // Serial.print("star");
+  // Serial.print(", ");
+  // Serial.print("test");
+  // Serial.print(", ");
+  // Serial.println("end");
 
   digitalWrite(LED_BUILTIN, HIGH);
   delay(10000);
